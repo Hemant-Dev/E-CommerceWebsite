@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Shopify</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Nav Section -->
@@ -18,8 +19,8 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">My Account</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/myAccount.html">My Account</a></li>
                 <li><a href="#">Wishlist</a></li>
                 <li><a href="#">ShoppingCart</a></li>
                 <li><a href="#">Checkout</a></li>
@@ -43,10 +44,13 @@
                 
             </div>
             <div class="col-r">
-                <button type="button" class="btn-cart">
+                <button type="button" class="btn-cart" id="cart">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-total">
-                        (0) items - $0.00
+                    <span>
+                        (<span id="cartCount">0</span>) items - $<span id="cartTotal">0.00</span> 
+                    </span>
+                    <span id="cart-items">
+
                     </span>
                 </button>
             </div>
@@ -76,30 +80,60 @@
 
     <div class="content">
         <div id="viewport">
-            <p>Viewport for pictures come here</p>
+            <!-- <p>Viewport for pictures come here</p> -->
+            <img src="/img/iPhone6-1140x380.jpg" alt="" srcset="" style="width: 100%;">
         </div>
 
         <div id="viewport-swiper">
-
+           
         </div>
 
         <div class="featured">
             <div class="col-1">
-                <p>Column 1</p>
+                <h4>MacBook</h4>
+                <img src="/img/macbook_1-200x200.jpg" alt="" srcset="">
+                <div class="caption">
+                    <p>Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.1..</p>
+                    <p class="price">$1000.00</p>
+                </div>
+                <a class="add-to-cart-1" href="#">Add to Cart</a>
             </div>
             <div class="col-2">
-                <p>Column 2</p>
+                <h4>iphone</h4>
+                <img src="/img/iphone_1-200x200.jpg" alt="" srcset="">
+                <div class="caption">
+                    <p>iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a nam..</p>
+                    <p class="price">$600.00</p>
+                </div>
+                
+                <a class="add-to-cart-2" href="#">Add to Cart</a>
             </div>
             <div class="col-3">
-                <p>column 3</p>
+                <h4>i-Mac</h4>
+                <img src="/img/apple_cinema_30-200x200.jpg" alt="" srcset="">
+                <div class="caption">
+                    <p>The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed sp..</p>
+                    <p class="price">$1200.00</p>
+                </div>
+                <a class="add-to-cart-3" href="#">Add to Cart</a>
             </div>
             <div class="col-4">
-                <p>Column 4</p>
+                <h4>Canon EOS 5D</h4>
+                <img src="/img/canon_eos_5d_1-200x200.jpg" alt="" srcset="">
+                <div class="caption">
+                    <p>Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we'r..</p>
+                    <p class="price">$400.00</p>
+                </div>
+                <a class="add-to-cart-4" href="#">Add to Cart</a>
             </div>
         </div>
 
         <div class="brands">
-            <p>Brands Content</p>
+            <!-- <p>Brands Content</p> -->
+            <img src="img/brands/burgerking-130x100.png" alt="">
+            <img src="/img/brands/cocacola-130x100.png" alt="" srcset="">
+            <img src="img/brands/dell-130x100.png" alt="" srcset="">
+            <img src="img/brands/disney-130x100.png" alt="" srcset="">
         </div>
 
         <div class="brands-swiper">
@@ -159,5 +193,6 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/e6b3d5f7ed.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

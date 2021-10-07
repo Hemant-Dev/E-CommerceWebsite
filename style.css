@@ -29,6 +29,10 @@ nav {
     color: #e95763;
     transition: all 0.5s ease;
 }
+
+.active {
+    color: #e95763;
+}
 .menu {
     float: right;
     margin: 20px;
@@ -161,7 +165,8 @@ header {
     
 }
 
-.ul-container li a {
+.ul-container li a,
+.featured a {
     color: #fff;
     padding: 10px 15px;
     background-color: #23a1d1;
@@ -172,6 +177,9 @@ header {
 }
 
 .ul-container li :hover {
+    color: #303030;
+}
+.featured :hover {
     color: #303030;
 }
 /* -----------Showcase Content ------------------ */
@@ -190,7 +198,10 @@ header {
     width: 100%;
     text-align: center;
     height: 450px;
-    border: 3px solid green;
+    border: 1px solid #666666;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
 }
 
 
@@ -211,9 +222,16 @@ header {
     height: 500px;
     margin: auto;
     padding: 10px;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     display: flex;
     flex-direction: row;
+}
+.featured h4 {
+    cursor: pointer;
+    color: #23a1d1;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: open sans, sans-serif;
 }
 
 .col-1,
@@ -224,11 +242,47 @@ header {
     margin: 5px;
     text-align: center;
     justify-content: center;
-    border: 3px dotted black;
+    border: 1px solid #666666;
+    border-radius: 10px;
+    /* position: relative; */
+}
+
+.add-to-cart-1,
+.add-to-cart-2,
+.add-to-cart-3,
+.add-to-cart-4 {
+    width: 80%;
+    margin: 0px 20px;
+    display: none;
+}
+
+.featured img{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.featured img:hover {
+    opacity: 0.8;
 }
 
 
 
+
+
+.caption {
+    padding: 0 20px;
+    font-family: open sans,sans-serif;
+    font-weight: 400;
+    color: #666;
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.price {
+    font-size: 20px;
+}
 /* ---------------Brands Content---------- */
 
 .brands {
@@ -239,6 +293,11 @@ header {
     display: flex;
     justify-content: center;
    
+}
+
+.brands img {
+    width: 25%;
+    height: 100%;
 }
 
 .brands-swiper {
@@ -328,10 +387,59 @@ footer h5 {
 }
 
 
+/* --------------------My Account Section---------------------- */
+
+/* ---Regsiteration Form Content */
+
+.registerationForm {
+
+    width: 1100px;
+    height: auto;    
+    margin: auto;
+    padding: 10px;
+    padding-left: 80px;
+    /* border: 3px solid green; */
+    display: table;
+}
+
+.formContent {
+    min-height: 600px;
+    width: 75%;
+    float: left;
+    /* border: 1px solid #666666; */
+    padding: 0px 10px;
+}
+
+#columnRight {
+    width: 25%;
+    min-height: 600px;
+    padding: 0px 10px;
+    /* border: 1px solid #666666; */
+}
+
+.formContent,
+#columnRight {
+    display: inline-block;
+}
+
+aside {
+
+}
 
 
-
-
+.btn-submit {
+   padding: 5px; 
+   margin: 10px 0px;
+   width: 20%;
+   height: 40px;
+   color: #fff;
+   /* padding: 10px 15px; */
+   background-color: #23a1d1;
+   border-radius: 5px;
+   text-decoration: none;
+   cursor: pointer;
+   text-align: center;
+}
 
 
 
