@@ -198,14 +198,14 @@ header {
     width: 100%;
     text-align: center;
     height: 450px;
-    border: 1px solid #666666;
+    /* border: 1px solid #666666; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     cursor: pointer;
 }
 
 
-/* Swiper */
+Swiper
 #viewport-swiper {
     width: 100%;
     text-align: center;
@@ -285,11 +285,11 @@ header {
 }
 /* ---------------Brands Content---------- */
 
-.brands {
+/* .brands {
     width: 100%;
     margin-top: 10px;
     height: 200px;
-    /* border:  solid ; */
+    border:  solid ;
     display: flex;
     justify-content: center;
    
@@ -298,15 +298,15 @@ header {
 .brands img {
     width: 25%;
     height: 100%;
-}
+} */
 
-.brands-swiper {
+/* .brands-swiper {
     width: 100%;
     margin-top: 10px;
     height: 50px;
     border: 1px solid #666666;
     border-radius: 10px;
-}
+} */
 
 
 
@@ -440,3 +440,9 @@ footer h5 {
 
 
 
+/* ------------Login Form------------- */
+
+#loginButton,
+#registerButton {
+    background-color: #23a1d1;
+}

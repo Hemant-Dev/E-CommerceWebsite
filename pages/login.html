@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
-    <title>Shopify</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <!-- Nav Section -->
-    <nav>
+     <!-- Nav Section -->
+     <nav>
         
         <div class="logo">
             <a href="/index.html">
@@ -77,112 +77,57 @@
     </div>
 
 
-    <!-- --------------Show case Content ---------------------- -->
+    <!-- ----------------Login form and cards -->
 
 
+    <div class="container mt-3">
+        <!-- Form section -->
 
-    <div class="content">
-        <!-- <div id="viewport"> -->
-            <!-- <p>Viewport for pictures come here</p> -->
-            <!-- <img src="/img/iPhone6-1140x380.jpg" alt="" srcset="" style="width: 100%;"> -->
-
-
-        <!-- </div> -->
-
-        <!-- <div id="viewport-swiper">
-           
-        </div> -->
-        <div class="container mt-4">
-            <div id="demoSlideShow" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators -->
-                <div class="carousel-indicators">
-                    <button class="active bg-dark" type="button" data-bs-target="#demoSlideShow" data-bs-slide-to="0"></button>
-                    <button type="button" class="bg-dark" data-bs-target="#demoSlideShow" data-bs-slide-to="1"></button>
-                </div>
-
-
-                <!-- Slideshow carousel -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="2000">
-                        <img src="/img/carouselImages/iPhone6-1140x380.jpg" alt="iphone" class="d-block w-100">
+        <div class="registerationForm">
+            <div class="formContent">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="text-dark">Login</h2>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="/img/carouselImages/MacBookAir-1140x380.jpg" alt="macbook" class="d-block w-100">
+                    <div class="card-body">
+                        <form action="#">
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password:</label>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password">
+                            </div>
+                            <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="remember" class="form-check-input">Remember me
+                                </label>
+                            </div>
+                            <button type="submit" id="loginButton" class="btn mb-3 text-white">Submit</button>
+                        </form>
                     </div>
                 </div>
-
-                <!-- left/right controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demoSlideShow" data-bs-slide-to="prev">
-                    <span class="carousel-control-prev-icon bg-dark rounded"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demoSlideShow" data-bs-slide-to="next">
-                    <span class="carousel-control-next-icon bg-dark rounded"></span>
-                </button>
             </div>
+            <aside id="columnRight" class="col-sm-3 hidden-xs">
+                <div class="list-group">
+                    <a href="/pages/login.html" class="list-group-item">Login</a>
+                    <a href="/pages/myAccount.html" class="list-group-item">Register</a>
+                    <a href="#" class="list-group-item">Forgotten Password</a>
+                    <a href="/pages/myAccount.html" class="list-group-item">My Account</a>
+                    <a href="#" class="list-group-item">Address Book</a>
+                    <a href="#" class="list-group-item">Wish List</a>
+                    <a href="#" class="list-group-item">Order History</a>
+                    <a href="#" class="list-group-item">Returns</a>
+                    <a href="#" class="list-group-item">Transactions</a>
+                    <a href="#" class="list-group-item">Newsletter</a>
+                    <a href="#" class="list-group-item">Favourites</a>
+                    <a href="#" class="list-group-item">My Cart</a>
+                </div>
+            </aside>
         </div>
 
-
-
-        <div class="featured">
-            <div class="col-1 col-sm-3">
-
-                <img src="img/products/macbook_1-200x200.jpg" alt="" srcset="">
-                <div class="caption">
-                    <p>Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.1..</p>
-                    <p class="price">$1000.00</p>
-                    <h4>MacBook</h4>
-                </div>
-                <a class="add-to-cart-1" href="#">Add to Cart</a>
-            </div>
-            <div class="col-2 col-sm-3">
-                
-                <img src="/img/products/iphone_1-200x200.jpg" alt="" srcset="">
-                <div class="caption">
-                    <p>iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a nam..</p>
-                    <p class="price">$600.00</p>
-                    <h4>iphone</h4>
-                </div>
-                
-                <a class="add-to-cart-2" href="#">Add to Cart</a>
-            </div>
-            <div class="col-3 col-sm-3">
-                
-                <img src="/img/products/apple_cinema_30-200x200.jpg" alt="" srcset="">
-                <div class="caption">
-                    <p>The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed sp..</p>
-                    <p class="price">$1200.00</p>
-                    <h4>i-Mac</h4>
-                </div>
-                <a class="add-to-cart-3" href="#">Add to Cart</a>
-            </div>
-            <div class="col-4 col-sm-3">
-                
-                <img src="/img/products/canon_eos_5d_1-200x200.jpg" alt="" srcset="">
-                <div class="caption">
-                    <p>Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we'r..</p>
-                    <p class="price">$400.00</p>
-                    <h4>Canon EOS 5D</h4>
-                </div>
-                <a class="add-to-cart-4" href="#">Add to Cart</a>
-            </div>
-        </div>
-
-        <div class="brands ms-4">
-            <!-- <p>Brands Content</p> -->
-            <img src="img/brands/burgerking-130x100.png" alt="">
-            <img src="/img/brands/cocacola-130x100.png" alt="" srcset="">
-            <img src="img/brands/dell-130x100.png" alt="" srcset="">
-            <img src="img/brands/disney-130x100.png" alt="" srcset="">
-            <img src="/img/brands/harley-130x100.png" alt="">
-            <img src="/img/brands/nfl-130x100.png" alt="">
-            <img src="/img/brands/nintendo-130x100.png" alt="">
-            <img src="/img/brands/redbull-130x100.png" alt="">
-            <!-- <img src="/img/brands/sony-130x100.png" alt=""> -->
-        </div>
-
-        
     </div>
-
 
 
     <!-- ---------------Footer ----------------- -->
@@ -235,6 +180,7 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/e6b3d5f7ed.js" crossorigin="anonymous"></script>
+    <script src="/scripts/login.js"></script>
     <script src="/scripts/script.js"></script>
 </body>
 </html>
