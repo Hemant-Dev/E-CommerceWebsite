@@ -446,3 +446,25 @@ footer h5 {
 #registerButton {
     background-color: #23a1d1;
 }
+
+
+/* -----------Product Pages------------- */
+
+.thumbnails {
+    list-style: none;
+    padding: 4px;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* MacBook */
+.thumbnail {
+    width: 120px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
